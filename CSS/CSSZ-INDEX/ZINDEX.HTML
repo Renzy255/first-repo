@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>CSS Z-INDEX</title>
+
+     <style>
+             
+
+    #container{
+        border: solid 2px brown;
+
+             }
+
+
+    div.aqua {
+        background-color: aqua;
+        width: 200px;
+        height: 100px;
+        position: absolute; 
+        z-index: 2;
+       margin-left:20px ;
+
+   
+     
+    }
+    
+    div.green {
+        background-color: green;
+        width: 150px;
+        height: 100px;
+        z-index: 1;
+       position: absolute;
+       top: 1%;
+       margin:50px 0 0 100px;
+ 
+        
+    }
+
+
+    div.blue {
+        background-color: blue;
+        width: 150px;
+        height: 100px;
+        z-index: 3;
+       position: absolute;
+       margin-left: 50px;
+ 
+        
+    }
+
+
+     </style>
+ </head>
+
+
+
+   <body>
+     <div id="container">                               
+      <div class="aqua">AQUA </div>
+      <div class="green">GREEN </div>
+     
+        <br>
+    <div class="blue">BLUE </div>
+
+
+       </div>
+
+    
+
+   </body>
+
+
+</html>

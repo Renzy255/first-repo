@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+      <meta>
+      <meta charset="UTF-8">
+      <meta name="description" content="CSS OUTLINE">
+      <meta name="keywords" content="CSS, BOX MODEL">
+      <meta name="author" content="Rennel Senyahan">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+      <style>
+
+             body{
+               margin:0;
+               display:grid;
+               justify-content: center;
+             }
+             
+            h1{
+              text-align: center;
+              word-spacing: 60px;
+            }
+
+              #jc-center{
+                width: 900px;
+                height: 200px;
+                border:2px solid green;
+                margin: 4px 4px 4px 4px;
+                display: flex;
+                justify-content: center;
+  
+                 
+                }
+
+                .jc-center{
+                width: 80px;
+                height: 80px;
+                border:2px solid black;
+                margin: 2px 2px 2px 2px;
+                
+                }
+
+
+
+        
+                #jc-left{
+                  width: 900px;
+                height: 200px;
+                border:2px solid green;
+                margin: 4px 4px 4px 4px;
+                display: flex;
+                justify-content: left;
+                
+  
+                 
+                }
+
+                .jc-left{
+                width: 80px;
+                height: 80px;
+                border:2px solid black;
+                margin: 2px 2px 2px 2px;
+                }
+
+
+
+
+
+                #jc-right{
+                 width: 900px;
+                height: 200px;
+                border:2px solid green;
+                margin: 4px 4px 4px 4px;
+                display: flex;
+                justify-content: right;
+                margin-top: 50px;
+                margin-bottom: 50px;
+  
+                 
+                }
+
+                .jc-right{
+                width: 100px;
+                height: 100px;
+                border:2px solid black;
+                margin: 2px 2px 2px 2px;
+              
+                }
+
+
+                
+                #jc-space-between{
+                  width: 900px;
+                height: 200px;
+                border:2px solid green;
+                margin: 4px 4px 4px 4px;
+                margin-bottom: 50px;
+                display: flex;
+                justify-content: space-between;
+                
+  
+                 
+                }
+
+                .jc-space-between{
+                width: 100px;
+                height: 100px;
+                border:2px solid black;
+                margin: 2px 2px 2px 2px;
+              
+                }
+
+
+
+                #jc-space-evenly{
+                width: 900px;
+                height: 200px;
+                border:2px solid green;
+                margin-bottom: 60px;
+               
+                margin: 4px 4px 4px 4px;
+                display: flex;
+                justify-content: space-evenly;
+                
+  
+                 
+                }
+
+                .jc-space-evenly{
+                width: 100px;
+                height: 100px;
+                border:2px solid black;
+                margin: 2px 2px 2px 2px;
+              
+                }
+
+
+
+                #jc-space-around{
+                width: 900px;
+                height: 300px;
+                border:2px solid green;
+                margin-top: 60px;
+                display: flex;
+                justify-content: space-around;
+
+                
+  
+                 
+                }
+
+                .jc-space-around{
+                width: 100px;
+                height: 100px;
+                border:2px solid black;
+                margin: 2px 2px 2px 2px;
+              
+                }
+
+
+
+           
+
+
+/*=============================================================================================*/
+
+
+
+        </style>
+    </head>
+
+        <body>
+             <h1>DISPLAY-FLEX        JUSTIFY-CONTENT</h1>
+
+              <div id="jc-center"> 
+                  <div class="jc-center">DF-JUSTIFY-CONTENT<br>:CENTER</div>
+                  <div class="jc-center">DF-JUSTIFY-CONTENT<br>:CENTER</div>
+                  <div class="jc-center">DF-JUSTIFY-CONTENT<br>:CENTER</div>
+                  <div class="jc-center">DF-JUSTIFY-CONTENT<br>:CENTER</div>
+                
+                 
+              </div>
+
+              <br>
+              <br>
+
+
+              <div id="jc-left"> 
+                <div class="jc-left">DF-JUSTIFY-CONTENT<br>:LEFT</div>
+                <div class="jc-left">DF-JUSTIFY-CONTENT<br>:LEFT</div>
+                <div class="jc-left">DF-JUSTIFY-CONTENT<br>:LEFT</div>
+                <div class="jc-left">DF-JUSTIFY-CONTENT<br>:LEFT</div>
+               
+               
+            </div>
+
+            <div id="jc-right"> 
+              <div class="jc-right">DF-JUSTIFY CONTENT:<br>RIGHT</div>
+              <div class="jc-right">DF-JUSTIFY CONTENT:<br>RIGHT</div>
+              <div class="jc-right">DF-JUSTIFY CONTENT:<br>RIGHT</div>
+              <div class="jc-right">DF-JUSTIFY CONTENT:<br>RIGHT</div>
+          </div>
+
+          <div id="jc-space-between"> 
+            <div class="jc-space-between">DF-JUSTIFY CONTENT:<br>SPACE<br>BETWEEN</div>
+            <div class="jc-space-between">DF-JUSTIFY CONTENT:<br>SPACE<br>BETWEEN</div>
+            <div class="jc-space-between">DF-JUSTIFY CONTENT:<br>SPACE<br>BETWEEN</div>
+            <div class="jc-space-between">DF-JUSTIFY CONTENT:<br>SPACE<br>BETWEEN</div>
+        </div>
+
+        <div id="jc-space-evenly"> 
+          <div class="jc-space-evenly">DF-JUSTIFY CONTENT:<br>SPACE-<br>EVENLY<br></div>
+          <div class="jc-space-evenly">DF-JUSTIFY CONTENT:<br>SPACE-<br>EVENLY<br></div>
+          <div class="jc-space-evenly">DF-JUSTIFY CONTENT:<br>SPACE-<br>EVENLY<br></div>
+          <div class="jc-space-evenly">DF-JUSTIFY CONTENT:<br>SPACE-<br>EVENLY<br></div>
+      </div>
+
+      <div id="jc-space-around"> 
+        <div class="jc-space-around">DF-JUSTIFY CONTENT:<br>SPACE-<br>AROUND<br></div>
+        <div class="jc-space-around">DF-JUSTIFY CONTENT:<br>SPACE-<br>AROUND<br></div>
+        <div class="jc-space-around">DF-JUSTIFY CONTENT:<br>SPACE-<br>AROUND<br></div>
+        <div class="jc-space-around">DF-JUSTIFY CONTENT:<br>SPACE-<br>AROUND<br></div> 
+    </div>
+
+
+          
+
+
+        
+
+
+
+
+             
+
+        </body>
+
+ 
+</html> 

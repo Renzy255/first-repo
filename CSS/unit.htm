@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head> 
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta charset="UTF-8">   
+    <meta name="description" content="CSS UNIT">
+    <meta name="keywords" content=" linear, background">
+    <meta name="author" content="Rennel Senyahan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>CSS UNITS</title>
+
+    <style>
+           /* T H I S   I S  A B S O L U T E   L E N G T H S*/
+h2{
+
+font-size: 100px;       /*STANDS FOR PIXEL*/
+font-size: 100pt;
+
+}
+
+
+.vh{
+  font-size: 5vh;      /*VIEWPORT HEIGHT*/
+  font-size: 6vw;     /* RElATIVE LENGTH | VIEWPORT WIDTH*/
+  
+
+}
+
+
+/*---------------------------------------------------------*/
+body{
+font-size: 24px;
+}
+                       /* 1em  x 24PX   */
+.em{
+font-size:1em ;       /*THIS IS PARENT BASED*/
+}
+
+/*---------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------*/
+html{
+font-size: 12px;                     
+}
+                             /* 5 x 12*/
+                            /*Follow the style of root element (HTML)*/
+.rem{
+font-size: 5rem;           /*Root Element Based*/
+
+                
+}
+/*------------------------------------------------------------*/
+
+.percentage{
+width: 50%;
+height: 50%;
+}
+
+
+.divabsolute{                  /*R E L A T I V E   L E N G T H*/
+font-size: 100vh, 100vw;
+background-color: black;
+}
+
+
+
+.divrelative{                  /*A B S O L U T E   L E N G T H*/
+width: 100px;
+height: 50px;       
+background-color: red;
+}
+
+
+    </style>
+ </head>
+   
+   
+    <body>
+ <h2> THIS IS ALL ABOUT CSS UNITS</h2>
+
+ <h2 class="vh"> THIS IS ONE OF THE RELATIVE LENGTH</h2>
+
+ <br>
+ <br>
+
+ <h2 class="em"> Relative to the element </h2>    <!-- R E L A T I V E  TO  THE  BODY TAG-->
+ 
+
+ <br>
+ <h2 class="rem">RELATIVE TO THE ROOT ELEMENT (HTML TAG)  </h2>  <!-- R E L A T I V E  TO  THE   HTML TAG-->
+ <br>
+
+<h2 class="percentage"> PERCENTAGE</h2>
+ 
+
+<br>
+
+
+<div class="divabsolute">
+    
+</div>
+
+
+<div class="divrelative">
+    
+</div>
+
+
+   </body>
+
+ </html>

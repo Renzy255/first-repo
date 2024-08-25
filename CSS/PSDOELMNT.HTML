@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+     <title>CSS PSEUDO ELEMENT</title>     
+     <meta charset="UTF-8">
+     <meta name="description" content="PSEUDO CLASSES">
+     <meta name="keywords" content="HTML, CSS, JavaScript">
+     <meta name="author" content="Rennel Senyahan">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           
+    
+    <style>
+
+    h1::first-letter{
+      font-weight: bold;
+      font-style: italic;
+    }
+
+      .f-line::first-line{
+        background-color: yellow;
+
+      }
+
+    .select::selection{
+        background-color: rgb(127, 255, 80);
+        color: rgb(255, 8, 0);
+    } 
+
+
+    #family li::before{
+        content:"✔";         /*W I N D O W S  +  S E M I C O L O N*/
+    }
+
+    .father::after{
+       content: "👨";
+    }
+
+    .mother::after{
+       content: "👩";
+    }
+
+    .child::after{
+       content: "👶";
+    }
+
+
+
+    .marker::before{
+        content: "✔";
+        color: rgb(255, 0, 0);
+        
+    }
+
+
+
+
+
+
+    </style>
+
+
+ </head>
+    
+        <body>  
+             <h1>PSEUDO ELEMENTS</h1>
+              
+             <p class="f-line">A CSS pseudo-element is a special keyword in CSS that allows you to style 
+                specific parts of an element's content without having to add more HTML <br> code. 
+                Think of it like a way to apply extra styles to certain parts of an element, 
+                even though <br> those parts don’t actually exist as separate elements  in the HTML.
+             </p>
+ 
+              
+
+            <br>
+            <br>
+
+                <p class="select">The p::selection property in CSS is used to change the appearance of the 
+                portion of text within a (paragraph) element when a user highlights 
+                or selects it. Normally, when you select text on a webpage 
+                (by clicking and dragging your mouse over it), the default style is usually a 
+                blue background with white text. However, with the ::selection pseudo-element, 
+                you can customize this look, allowing you to change the background color, 
+                text color, and even other styling aspects of the selected text.
+                </p>
+            
+            <ul id="family">
+                <li class="father">PSEUDO ELEMENT :</li>
+                <li class="mother">PSEUDO ELEMENT :</li>
+                <li class="child">PSEUDO ELEMENT :</li>
+
+            </ul>
+ 
+             <br>
+             <br>
+
+             <p class="marker">The ::marker pseudo-element in CSS is used to style the markers (like bullets 
+                or numbers) of list items in ordered (ol) and unordered (ul) lists. Normally, 
+                these markers are simple dots, squares, or numbers, depending on the type of list.
+                 With the ::marker pseudo-element, you can customize their appearance, changing 
+                 their color, size, font, and other properties.
+             </p>
+              
+        </body>
+ 
+
+
+    
+</html>

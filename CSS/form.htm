@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="COLORED, FORM">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Rennel Senyahan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="1">
+    <title>FORM ELEMENTS</title>
+
+
+<style>
+    h1 {                                        /* S I M P L E    S E L E C T O R */
+    color: rgba(0, 0, 251, 0.698);
+}
+
+p {                                            /* S I M P L E  S E L E C T O R */
+    color: rgb(150, 18, 18);
+}
+
+#background {                                  /* T H I S    IS    I D   S E L E C T O R */
+    background-color: rgb(110, 133, 28);
+}
+
+[href] {
+    color: khaki;
+}
+
+.list {                                    /* C L A S S   S E L E C T O R*/
+    color: cyan;
+}
+
+.lnkcolor {
+    background-color: deeppink;
+    color: black;
+}
+
+.lightsalmon {
+    background-color: lightsalmon;
+}
+
+           /* F O R   T H E   I N P U T   T E X T    E L E M E N T */
+
+.date {                                     /*DATE FORM*/      
+    background-color: cornflowerblue;
+}
+
+.email {
+    background-color: darkgreen;        /* E M A I L   F O R M  */
+}
+
+.password {                               /* P A S S W O R D  I N P U T   F O R M  */
+    background-color: beige;
+} 
+
+.number {                                 
+    background-color: aquamarine;
+}
+
+.tel {                                   /* T E L E P H O N E   I N P U T    F O R M  */
+    background-color: brown;
+}
+
+.search {                               /* S E A R C H   B A R     I N P U T  F O R M  */
+    background-color: bisque;
+}
+
+.url {                                  /*U R L   S E A R C H    B A R   I N P U T   F O R M */
+    background-color: burlywood;
+}
+
+
+/* C O L O R E D    B U T T O N    E L E M E N T S */
+
+.file,
+.checkbox,
+.radio,
+.button,
+.reset,
+.submit { /* T H I S   I S   A  G R O U P   S E L E C T O R */
+    color: rgb(159, 0, 0);
+    background-color: black;
+}
+
+/* S T Y L I N G    T E X T -  A R E A  ELEMENT */
+
+.txtarea {
+    color: darkgoldenrod;
+}
+
+/* STYLING SELECT ELEMENT */
+
+#select {
+    background-color: chocolate;
+    color: chartreuse;
+}
+
+.option {
+    color: darkgray;
+    background-color: rgb(229, 7, 7);
+}
+
+
+/* F O R    T A B L E    H T M L     FILE */
+table {
+    color: burlywood;
+}
+
+#katawan {
+    background-color: black;
+}
+
+</style>
+
+
+</head>
+
+<body id="background">
+
+    <h1>ITS ALL ABOUT COLORING THE OTHER HTML ELEMENTS</h1>
+    <P>ITs still a fundamental level</P> <br>
+
+    <hr />
+
+
+    <br>
+    <hr />
+
+    <form>
+        <input class="lightsalmon" type="text"     placeholder="lightsalmon" /> <br>
+        <input class="date"        type="date"     value="2024-06-25" /> <br>
+        <input class="email"       type="email"    placeholder="email" /> <br> <!-- A text field with an email address validation-->
+        <input class="password"    type="password" placeholder="password" /> <br> <!--password only, this hides a text-->
+        <input class="number"      type="number"   placeholder="number" /> <br> <!--This only allows a numbers-->
+        <input class="tel"         type="tel"      placeholder="tel" /> <br> <!--Text field for telephone number validation-->
+        <input class="search"      type="search"   placeholder="search" /> <br>
+        <input class="url"         type="url"      placeholder="URL" /> <br>
+        <input class="submit"      type="submit"   target="_blank" />
+    </form>
+
+    <hr />
+    <br>
+    <br>
+
+    <!-- COLORED BUTTON ELEMENTS -->
+
+    <form>
+        <input class="file"     type="file" /> <br>
+        <input class="checkbox" type="checkbox" /> <br>
+        <input class="radio"    type="radio" /> <br>
+        <input class="button"   type="button" /> <br>
+        <input class="reset"    type="reset" /> <br>
+        <input class="submit"   type="submit" /> <br>
+    </form>
+
+    <hr />
+    <br>
+    <br>
+
+    <!--STYLING TEXT AREA-->
+    <form>
+        <div class="txtarea">
+            <textarea readonly> Readonly</textarea> <br>
+        </div>
+    </form>
+
+    <hr />
+    <br>
+    <br>
+
+    <!--STYLING SELECT ELEMENT-->
+
+    <form>
+        <select id="select" name="WEBDEV">
+            <div class="option">
+                <option>HTML</option>
+                <option>CSS</option> <!--WITHOUT VALUE-->
+                <option>JAVASCRIPT</option>
+            </div>
+        </select>
+    </form>
+
+</body>
+
+</html>

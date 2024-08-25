@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    align-items: center;
+   
+  
+   
+  }
+
+ 
+
+  .container {
+    width: 40%;
+    height: 80%;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap; /* Allows multiple rows */
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 50px 0;
+    border-radius: 20px;
+    background:linear-gradient(to left, rgba(229, 246, 3, 0.979), rgb(76, 236, 2));
+    box-shadow: 3px 3px 3px 3px grey, -3px -3px 3px 3px grey;                        /*back-shadow: x-offset, y-offset, blur, spread, color */
+      
+  }
+
+  .s-container {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 17, 0);
+    color: rgb(239, 239, 239);
+    margin: 4px;
+    border-radius: 1px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: solid rgb(10, 30, 246);
+
+  }
+
+   .item-1{
+    position: relative;
+    top: -60px;     /*will go top*/
+    left: 200px;     /*will go to right*/
+    z-index: 1;
+   }
+
+   .item-2{
+    position:absolute;
+    right:  1px;     /*will go top remove to the normal flow of the document*/
+    z-index: 2;
+   }
+
+   .item-3{
+    position:relative;
+    z-index: 3;       /*will cover the item one, and normal flow of the document*/  
+   }
+
+   .item-4{
+    position:fixed;
+    bottom: 5px;
+    z-index: 4;   
+   }
+
+   .item-5{
+    position:sticky;
+    top: 0;
+    z-index: 5;      /*HIGHER THAN z- index 4*/
+   }
+
+
+</style>
+</head>
+<body>
+
+ 
+        <div class="container">
+            <div class="s-container item-1">POS-REL.</div>
+            <div class="s-container item-2">POS-ABS.</div>
+            <div class="s-container item-3">z-index</div>
+            <div class="s-container item-4">POS-FIXED</div>
+            <div class="s-container item-5" >POS-STICKY</div>
+            <div class="s-container" class="item-6">6</div>
+            <div class="s-container" class="item-7">7</div>
+            <div class="s-container" class="item-8">8</div>
+            <div class="s-container" class="item-9">9</div>
+            <div class="s-container" class="item-10">10</div>
+            <div class="s-container" class="item-11">11</div>
+            <div class="s-container" class="item-12">12</div>
+            <div class="s-container" class="item-13">13</div>
+        </div>
+    
+</body>
+</html>

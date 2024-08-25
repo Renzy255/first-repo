@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+    <title> BACKGROUND IMAGE</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="CSS TRANSITION">
+    <meta name="keywords" content="CSS, Background, CSS image">
+    <meta name="author" content="Rennel Senyahan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <style>
+
+
+
+   button{
+    background-color: crimson;
+    transition: 0.5s;                                /*CSS TRANSITION*/
+    width: 100px;
+    
+ }
+
+ button:hover{
+   background-color: rgb(67, 43, 226);
+   width:300px;
+   
+}
+
+
+
+                      /*TRANSITION: property,  duration;*/     
+    #transcale{
+    background-color: salmon;
+    width: 100px;
+    transition: width 3s, background-color 0.3s;
+    }
+     
+
+   #transcale:hover{
+    background-color: rgb(43, 0, 213);
+    width:399px;
+    
+   }  
+
+
+
+
+             /*  T  I  M  I  N  G      F  U  N  C  T  I  O  N  S */
+
+   #ease{
+    background-color: salmon;
+    width: 100px;
+    transition: ease 1s;                       /* T R A N S I T I O N :   E A S E */
+    }
+     
+
+   #ease:hover{
+    background-color: rgb(43, 0, 213);
+    width:200px;
+   }  
+
+
+
+   #linear{
+    background-color: salmon;                /* T R A N S I T I O N :   L I N E A R */
+    width: 100px;
+    transition: linear 1s;
+    }
+     
+
+   #linear:hover{
+    background-color: rgb(43, 0, 213);
+    width:200px;
+   }  
+
+
+
+
+   #ease-in{
+    background-color: salmon;                /* T R A N S I T I O N :   EASE-IN */
+    width: 100px;
+    transition: ease-in 1s;
+    }
+     
+
+   #ease-in:hover{
+    background-color: rgb(43, 0, 213);
+    width:200px;
+   }  
+
+
+   
+   #ease-out{
+    background-color: salmon;                /* T R A N S I T I O N :   EASE-OUT */
+    width: 100px;
+    transition: ease-out 1s;
+    }
+     
+
+   #ease-out:hover{
+    background-color: rgb(43, 0, 213);
+    width:200px;
+   }  
+
+  
+   
+   
+   #ease-in-out{
+    background-color: salmon;                /* T R A N S I T I O N :   EASE-IN-OUT */
+    width: 100px;
+    transition: ease-in-out 1s;
+    }
+     
+
+   #ease-in-out:hover{
+    background-color: rgb(43, 0, 213);
+    width:200px;
+   }  
+
+   
+
+
+
+  
+
+
+
+
+
+
+
+
+   #property{
+   background-color: rgb(246, 0, 0);         /* CSS  T R A N S I T I O N  PROPERTY  */
+   width: 100px;
+   transition: width 3s;
+
+}
+
+#property:hover{
+   background-color: rgb(68, 0, 255);        
+   width: 200px;
+
+
+}
+
+
+
+
+               /* TRANSITION: property, duration, timing, delay */
+   #shorthand{
+    background-color: salmon;         /* CSS  T R A N S I T I O N      S H O R T H A N D    P R O P E R T Y */
+    width: 100px;
+    transition: width 1s linear 0.5s;
+    }
+     
+
+   #shorthand:hover{
+    background-color: rgb(43, 0, 213);
+    width:200px;
+   }  
+
+
+
+#duration{
+   background-color: rgb(246, 0, 0);         /* CSS  T R A N S I T I O N  D U R A T I O N  */
+   width: 100px;
+   transition-duration: 3s;
+}
+
+#duration:hover{
+   background-color: rgb(68, 0, 255);        
+   width: 200px;
+}
+
+
+
+#delay{
+   background-color: rgb(246, 0, 0);         /* CSS  T R A N S I T I O N     D E L A Y  */
+   width: 100px;
+   transition-delay: 3s;
+
+}
+
+#delay:hover{
+   background-color: rgb(68, 0, 255);        
+   width: 200px;
+
+}
+
+
+#property{
+   background-color: rgb(246, 0, 0);         /* CSS  T R A N S I T I O N  PROPERTY  */
+   width: 100px;
+   transition: width 3s;
+
+}
+
+#property:hover{
+   background-color: rgb(68, 0, 255);        
+   width: 200px;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+  <body>
+          <button class="transition" > 100% </button>
+            <br>    
+
+         <input type="button" value="scale" id="transcale">
+         
+
+
+          
+          
+
+
+         <br>
+         <br>
+
+
+                             <!--T R A N S I T I O N :   D U R A T I O N-->   
+
+         <input type="button" value="transition:DURATION" id="duration">
+
+
+          <br> 
+          <br>
+            
+                                <!--T R A N S I T I O N :   D E L A Y -->   
+         <input type="button" value="transition:DELAY" id="delay">
+
+         <br> 
+         <br>
+
+                        <!--T R A N S I T I O N :   PROPERTY-->   
+         <input type="button" value="transition:width 3s" id="property">
+
+                     <!-- T  I  M  I  N  G      F  U  N  C  T  I  O  N  S -->
+
+         <br>
+         <br>
+               <h3>TIMING FUNCTIONS</h3>
+       <input type="button" value="transition:ease" id="ease">   <br>
+       <input type="button" value="transition:linear" id="linear">  <br>
+       <input type="button" value="transition:ease-in" id="ease-in">   <br>
+       <input type="button" value="transition:ease-out" id="ease-out">  <br>  
+       <input type="button" value="transition:ease-in-out" id="ease-in-out">  <br>
+
+
+         <br>  
+         <!-- CSS  T R A N S I T I O N      S H O R T H A N D    P R O P E R T Y -->
+
+         <input type="button" value="transition:shorthand property" id="shorthand">
+         
+
+
+  </body>
+         
+
+  
+            
+      
+
+   </html>
