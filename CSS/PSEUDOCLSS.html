@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+         SEUDO CLASSES
+    </title>
+
+    <style>
+
+
+        #hover {
+            background-color: salmon;
+        }
+
+        #hover:hover {                               /*THIS WILL HOVER THE BUTTON*/
+            background-color: yellowgreen;
+        }
+
+
+
+        a:active {
+            background-color: rgb(255, 247, 0);
+                        /*BACKGROUND COLOR WILL CHANGE WHEN CLICK*/
+        }
+        
+        a:link{
+            color: rgb(255, 0, 0);   
+        }
+
+
+                /* DISABLED SEUDOO CLASS */
+
+        button:disabled {
+        background-color: maroon;
+        opacity: 0.3;
+        }
+
+
+
+        /* FOCUS SEUDO CLASS */
+
+        #focus:focus {
+            border: 2px solid;
+            border-color: maroon;
+            outline: none;
+            background-color: skyblue;
+        }
+
+        input:checked {
+            scale: 2.0;
+        }
+
+  
+        .f-child:first-child{
+            background-color: burlywood;
+        }
+
+
+          
+        .f-o-t:first-of-type{
+            background-color: rgb(238, 255, 0);
+        }
+
+
+
+        .l-child:last-child{
+            background-color: rgb(30, 255, 1);
+        }
+
+        .l-o-t:last-of-type{
+            background-color: rgb(255, 0, 174);
+        }
+
+        .nt-p:not(p){
+            background-color: blueviolet;
+        }
+        
+
+
+
+
+
+
+
+
+        /* OTHER EXAMPLES */
+
+        #hoverr {
+            background-color: darkgreen;
+            color: black;
+        }
+
+        #hoverr:hover {
+            background-color: black;
+            color: white;
+        }
+
+
+        #hoverrr {
+            background-color: white;
+            color: black;
+        }
+
+        #hoverrr:hover {
+            background-color: black;
+            color: white;
+        }
+
+        #hoverrr:active {
+            background-color: maroon;
+            color: red;
+        }
+
+
+
+        #hoverrrr:hover {
+            background-color: black;
+            color: white;
+            width: 80px;
+            height: 50px;
+        }
+
+        .nth-child:nth-child(1){
+            background-color: darkblue;
+            color: white;
+        }
+
+        .nth-lot:nth-last-of-type(2){
+            background-color: rgb(139, 49, 0);
+            color: white;
+        }
+
+        .nth-ot:nth-of-type(2){
+            background-color: rgb(0, 252, 239);
+            color: rgb(15, 15, 15);
+        }
+
+        .o-o-t:only-of-type{
+            background-color: darkkhaki;
+        }
+
+
+         .only-child:only-child{
+            background-color: crimson;
+            color: white;
+         }
+         
+
+         #optional:optional{
+            background-color: dodgerblue;
+         }
+
+         #required:required{
+            background-color:orangered;
+         }
+ 
+
+
+
+
+
+    </style>
+
+</head>
+            <body>
+
+            <form class="form">
+                <input type="submit" name="submit" id="hover">
+          
+
+            <br>
+            <br>
+
+            <a href="position.html" target="_blank"> ACTIVE</a>
+
+            <br>
+            <br>
+
+            <button disabled> DISABLED</button>
+
+               
+            <br>
+            <br>
+
+            <input type="email" name="email" id="focus">
+
+            
+            <br>
+            <br>
+
+            <input type="checkbox" name="checked"/>
+            <input type="radio" name="checked"/>
+
+            <br>
+            <br>
+
+
+
+            <ol>
+                <li class="f-child">FIRT CHILD</li>
+                <li class="f-child">CHILD</li>
+                <li class="f-child">CHILD</li>
+            </ol>
+
+            <br>
+            <br>
+
+            <ol>
+                <li class="f-o-t">FIRST-OF-TYPE</li>
+                <li class="f-o-t">CHILD</li>
+                <li class="f-o-t">CHILD</li>
+            </ol>
+
+            <ol>
+                <li class="f-o-t">FIRST-OF-TYPE</li>
+                <li class="f-o-f">CHILD</li>
+                <li class="f-o-f">CHILD</li>
+            </ol>
+
+             <br>
+             <br>
+
+             <ol>
+                <li class="l-child">CHILD</li>
+                <li class="l-child">CHILD</li>
+                <li class="l-child">LAST-CHILD</li>
+            </ol>
+
+
+            <br>
+            <br>
+
+            <ol>
+                <li class="l-o-t">LAST OF TYPE</li>
+                <li class="l-o-t">CHILD</li>
+                <li class="l-o-t">LAST OF TYPE</li>
+            </ol>
+
+            <ol>
+                <li class="l-o-t">LAST OF TYPE</li>
+                <li class="l-o-t">CHILD</li>
+                <li class="l-o-t">LAST OF TYPE</li>
+            </ol>
+
+            <br>
+            <br>
+
+            <div>        
+               <p class="nt-p">NOT(SELECTOR)</p>
+               <h3 class="nt-p">THIS WILL BE SELECTED</h3>
+               <h3 class="nt-p">THIS WILL BE SELECTED</h3>
+               <h3 class="nt-p">THIS WILL BE SELECTED</h3>
+            </div>
+  
+            <br>
+            <br>
+
+            <div>        
+                <p class="nth-child">1</p>
+                <h3 class="nth-child">2</h3>
+                <h3 class="nth-child">3</h3>
+                <h3 class="nth-child">4</h3>
+             </div>
+
+             <br>
+             <br>
+             <br>
+             <br>
+
+
+             <div>         
+                <p class="nth-lot">Selects every element that is the second  element of its parent, counting from the last child</p>
+                <p class="nth-lot">Selects every element that is the second  element of its parent, counting from the last child</p>
+                <p class="nth-lot">Selects every element that is the second  element of its parent, counting from the last child</p>
+                <p class="nth-lot">Selects every element that is the second  element of its parent, counting from the last child</p>
+             </div>
+             <br>
+             <div>         
+                <p class="nth-lot">Selects every element that is the second  element of its parent, counting from the last child</p>
+                <p class="nth-lot">Selects every element that is the second  element of its parent, counting from the last child</p>
+                <p class="nth-lot">Selects every element that is the second  element of its parent, counting from the last child</p>
+                <p class="nth-lot">Selects every element that is the second  element of its parent, counting from the last child</p>
+             </div>
+
+             <br>
+             <br>
+             <br>
+             <br>
+
+             <div>         
+                <p class="nth-ot">SELECT EVERY second element of its parent</p>
+                <p class="nth-ot">SELECT EVERY second element of its parent</p>
+                <p class="nth-ot">SELECT EVERY second element of its parent</p>
+                <p class="nth-ot">SELECT EVERY second element of its parent</p>
+             </div>
+            <br>
+             <div>         
+                <p class="nth-ot">SELECT EVERY second element of its parent</p>
+                <p class="nth-ot">SELECT EVERY second element of its parent</p>
+                <p class="nth-ot">SELECT EVERY second element of its parent</p>
+                <p class="nth-ot">SELECT EVERY second element of its parent</p>
+             </div>
+
+             <br>
+             <br>
+             <br>
+             <br>
+
+             <div>         
+                <p class="o-o-t">Selects every p element that is the only element of its parent</p>
+                  <h3>Selects every p element that is the only element of its parent</h3>
+                  <h3>Selects every p element that is the only element of its parent</h3>
+             </div>
+            <br>
+             <div>         
+                <p class="o-o-t">Selects every p element that is the only element of its parent</p>
+                <h3>Selects every p element that is the only element of its parent</h3>
+                <h3>Selects every p element that is the only element of its parent</h3>
+
+             </div>
+
+
+             <br>
+             <br>
+             <br>
+             <br>
+
+             <div>         
+                <h3 class="only-child">	Selects every element that is the only child of its parent</h3>    
+             </div>
+            <br>
+             <div>         
+                <h3 class="only-child">	Selects every element that is the only child of its parent</h3>
+            </div> 
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <form>
+                <input type="text" id="optional" required/> <br>
+                <input type="text" placeholder="THIS WILL BE SELECTED"  id="optional"/>   <br>
+                <input type="text" placeholder="THIS WILL BE SELECTED"  id="optional" />   <br>
+            </form>
+
+
+            <br>
+            <br>
+            <br>
+
+
+            <form>
+                <input type="text" placeholder="THIS WILL BE SELECTED" id="required" required/> <br>
+                <input type="text" id="required"/>   <br>
+                <input type="text" id="required"/>   <br>
+            </form>
+
+
+
+         
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+
+
+            <form class="form">
+                <input type="submit" name="submit" id="hoverr">
+            </form>
+
+            <br>
+            <br>
+
+            <form class="form">
+                <input type="submit" name="submit" id="hoverrr">
+            </form>
+
+            <br>
+            <br>
+
+            <form>
+                <input type="submit" name="submit" id="hoverrrr">
+            </form>
+
+
+    </body>
+    </html>

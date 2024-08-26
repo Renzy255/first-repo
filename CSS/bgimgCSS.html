@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+    <title> BACKGROUND IMAGE</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="BackGround Image">
+    <meta name="keywords" content="CSS, Background, CSS image">
+    <meta name="author" content="Rennel Senyahan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <style>
+
+     #entire{
+        color: rgb(247, 255, 1);
+     }
+                                              /* B A C K G R O U N D    R E P E A T */  
+    .repeat{
+        background-image: url(coding.jpg);
+         background-repeat: repeat;   
+       
+     }
+ 
+    .repeat-x{
+        background-image: url(coding.jpg);
+        background-repeat:repeat-x;             /*T H I S   WILL REPEAT HORIZONTALLY*/
+        
+    }                                          
+
+    .repeat-y{
+        background-image: url(coding.jpg);
+        background-repeat:repeat-y;            /*T H I S   WILL REPEAT VERTICALLY*/
+    }
+
+
+    .round{
+        background-image: url(coding.jpg);
+        background-repeat:round;                /*SINASAKOP  ANG ENTIRE SCREEN*/
+        
+    }
+
+    .no-repeat{
+        background-image: url(coding.jpg);    /* THE PARTICULAR IMAGE CANNOT REPEAT*/
+        background-repeat:no-repeat;
+       
+    }
+    .space{
+        background-image: url(coding.jpg);    /* EVERY REPEATED IMAGE WILL HAVE AN SPACE TO EACH OTHER*/   
+        background-repeat:space;  
+                  
+    }
+                            
+    
+
+                                       /* B A C K G R O U N D    A T T A C H M E N T  */    
+    .scroll{
+        background-image: url(coding.jpg);    
+        background-attachment: scroll;        /*THIS WILL SCROLL WITH THE CONTENT OF THE IMAGE*/
+      
+    }
+    
+    .fixed{
+        background-image: url(coding.jpg);    
+        background-attachment: fixed;  
+       
+    }
+  
+
+                                /*B A C K G R O U N D   P O S I T I O N*/
+   .center-top{
+    background-image: url(coding.jpg);  
+    background-position: center top ;         /* x-pos, y-pos  |  0%, 0%*/    
+   
+
+
+    /*              OTHER PROPERTIES: 
+
+    background-position: center center ;
+    background-position: center bottom   ;    
+    background-position: center right ;    
+    background-position: center left ;    
+
+    background-position: bottom center ;
+    background-position: bottom bottom ;
+    background-position: bottom top   ;    
+    background-position: bottom right ;                  
+    background-position: bottom left ;    
+    
+    background-position: top center;
+    background-position: top bottom;
+    background-position: top top;
+    background-position: top right;
+    background-position: top left;
+    
+    background-position: right center;
+    background-position: right bottom;
+    background-position: right top;
+    background-position: right right;
+    background-position: right left;
+
+    background-position: left center;
+    background-position: left bottom;
+    background-position: left top;
+    background-position: left right;
+    background-position: left left;  */
+    
+   }                             
+
+
+          /* B A C K G R O U N D   S I Z E*/
+
+    .auto{   
+          background-image: url(coding.jpg);
+          background-repeat: no-repeat;  
+          background-size: auto;
+    }
+
+    .contain{   
+          background-image: url(coding.jpg);
+          background-repeat: no-repeat;  
+          background-size: contain;
+    }
+
+    .cover{
+        background-image: url(coding.jpg);
+        background-repeat: no-repeat;  
+        background-size: cover;                  /* THIS WILL COVER THE ENTIRE WEBSITE*/
+    }
+
+
+    .shorthand{
+        background: center center / cover no-repeat url(coding.jng);
+        color:black;
+    }
+
+        </style>
+    </head>
+   
+                    
+     <body>
+      
+      
+        <!--  B A C K G R O U N D   R E P E A T-->
+
+      <div id="entire">       
+       <section>   
+
+        <div class="repeat-y">     
+            <h1>BACKGROUND-REPEAT: -Y </h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+        </div>
+        <div class="repeat-x">     
+            <h1> BACKGROUND REPEAT REPEAT: -X </h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+        </div>
+         <div class="repeat">     
+            <h1>BACKGROUND REPEAT</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+         </div>
+        <div class="round">     
+            <h1>BACKGROUND- REPEAT:  ROUND</h1> 
+            <h1>CHOOSE TO STRETCH RATHER THAN TO CUT THE EDGES</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+        </div>
+        <div class="no-repeat">     
+            <h1>BACKGROUND- REPEAT:  NO-REPEAT</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+        </div>
+        <div class="space">     
+            <h1>BACKGROUND REPEAT: SPACE</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+        </div>
+    </section>
+ 
+     <br> 
+     <br> 
+     <br> 
+     <br> 
+                                    <!--B A C K G R O U N D  A T T A C H M E N T -->
+    <section id="attachment"> 
+        <div class="scroll">     
+            <h1>THIS WILL SCROLL INCLUDING THE CONTENT</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+        </div>
+
+        <br> 
+        <br> 
+        <br> 
+        <br> 
+        <br> 
+        <br> 
+        <br> 
+        <br> 
+
+        <div class="fixed">     
+            <h1>THIS BACKGROUND WILL NOT SCROLL, THE CONTENT ONLY</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+        </div>
+    </section>
+
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+                                    <!--B A C K G R O U N D   P O S I T I O N-->
+   <section id="bgposition">
+       <div class="center-top">     <!--x pos ,  y-pos--> 
+       <h1> BACKGROUND POSITION CENTER TOP </h1> 
+       <h1> THIS WORK IF ZOOM IN / OUT </h1>
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1> 
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1> 
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1> 
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1> 
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1> 
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1> 
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1> 
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1> 
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1>
+       <h1> I LOVE YOU</h1>
+     </div>
+   </section>
+
+             <!-- B A C K G R O U N D    S I Z E -->
+
+     <section id="bgsize"> 
+         <div class="auto">        <!--DEFAULT SIZE-->          
+            <h1> THIS IS THE DEFAULT SIZE</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+         </div>
+
+         <br>
+         <br>
+         <br>
+         <br>
+
+
+         <div class="contain">                                     <!--C O N T A I N   S I Z E-->          
+            <h1>CONTAIN THE IMAGE INSIDE OF THE WEBSITE</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+         </div>
+
+
+         <br>
+         <br>
+         <br>
+         <br>
+
+         <div class="cover">                                     <!--COVER THE WHOLE WEBPAGE SIZE-->          
+            <h1>MAKE THE IMAGE AS THE COVER OF THE ENTIRE WEBSITE</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+         </div>
+
+         <div class="shorthand">
+            <h1> BACKGROUND SHORTHAND</h1>
+            <h1> I LOVE YOU</h1> 
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+            <h1> I LOVE YOU</h1>
+         </div>
+     </section>
+    </div>  
+  
+   </body>
+
+
+</html>

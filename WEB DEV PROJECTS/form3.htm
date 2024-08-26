@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Awesome website">
+    <title>Text Area</title>
+</head>
+
+<body>
+
+    <!--THIS IS A TEXT-AREA ELEMENT-->
+    <form>
+        <textarea> </textarea> <br>                                  <!--SYNTAX WITHOUT ATTRIBUTE-->
+        <textarea cols="40" rows="40">I LOVE YOU</textarea> <br>     <!--Number of Lines and Width of Text Area-->
+        <textarea maxlength="50"> </textarea> <br>                   <!--Specifies the maximum number of characters-->
+        <textarea required> </textarea> <br>                         <!--This field is required to fill in-->
+        <textarea name="textarea"> </textarea> <br>                  <!--Specifies the name of the text area-->
+        <textarea placeholder="TEXTAREA"> </textarea> <br>           <!--Placeholder shown in the text field-->
+        <textarea readonly> Readonly</textarea> <br>                 <!--This field can only read-->
+        <textarea disabled> Disabled</textarea> <br>                 <!--This field is disabled and cannot be filled in-->
+        <input type="submit"/>
+    </form>
+
+    <br>
+    <br>
+
+    <!--THIS IS THE SELECT ELEMENT-->
+    <form>
+        <h2><i>THIS IS THE SELECT ELEMENT AND ITS ATTRIBUTES</i></h2> <br>
+
+        <!--WITH NAME ATTRIBUTE-->
+        <select name="WEBDEV">
+            <option>HTML</option>
+            <option>CSS</option>        <!--WITHOUT VALUE-->
+            <option>JAVASCRIPT</option>
+        </select>
+
+        <br>
+        <br>
+
+        <select name="PROGLANGUAGES">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>             <!--WITH VALUE-->
+            <option value="javascript">JAVASCRIPT</option>
+        </select>
+    </form>
+
+    <br>
+    <br>
+
+    <!--FOR MULTIPLE ATTRIBUTE OF A SELECT ELEMENT-->
+    <form>
+        <select name="WEBDEV" multiple>      
+            <option value="SQL">SQL</option>
+            <option value="PYTHON">PYTHON</option>    
+            <option value="API">API</option>
+        </select>
+    </form>
+
+    <br>
+    <br>
+
+    <!--FOR SIZE ATTRIBUTE-->
+    <form>
+        <select name="SIZE" size="2">       
+            <option value="SQL">SQL</option>
+            <option value="PYTHON">PYTHON</option>    
+            <option value="API">API</option>
+            <option value="LINUX">LINUX</option>
+            <option value="networking">NETWORK</option>
+        </select>
+    </form>
+
+    <br>
+    <br>
+
+    <!--FOR REQUIRED ATTRIBUTE-->
+    <form>
+        <select name="REQUIRED" required>       
+            <option value="SQL">SQL</option>
+            <option value="PYTHON">PYTHON</option>    
+            <option value="API">API</option>
+            <option value="LINUX">LINUX</option>
+            <option value="networking">NETWORK</option>
+        </select>
+    </form>
+
+    <br>
+    <br>
+
+    <!--FOR DISABLED ATTRIBUTE-->
+    <form>
+        <select name="DISABLED" disabled>       
+            <option value="SQL">SQL</option>
+            <option value="PYTHON">PYTHON</option>    
+            <option value="API">API</option>
+            <option value="LINUX">LINUX</option>
+            <option value="networking">NETWORK</option>
+        </select>
+    </form>
+
+    <br>
+    <br>
+
+    <!--FOR FORM ATTRIBUTE-->
+    <form>
+        <select name="FORM" form>       
+            <option value="SQL">SQL</option>
+            <option value="PYTHON">PYTHON</option>    
+            <option value="API">API</option>
+            <option value="LINUX">LINUX</option>
+            <option value="networking">NETWORK</option>
+        </select>
+    </form>
+
+    <br>
+    <br>
+
+    <!--THIS IS THE OPTGROUP ELEMENT-->
+    <form>
+        <h2><i>THIS IS THE OPTGROUP ELEMENT</i></h2> <br>
+        <h5><i>THIS INDICATES AN ITEM GROUP IN A DROP-DOWN LIST</i></h5> <br>
+       
+        <select name="META HEROES">       
+            <optgroup label="TANKS">
+                <option value="TIGREAL">TIGREAL</option>
+                <option value="RUBY">RUBY</option>    
+                <option value="KAJA">KAJA</option>
+                <option value="MATHILDA">MATHILDA</option>
+                <option value="MINOTAUR">MINOTAUR</option> 
+            </optgroup>
+            <optgroup label="MAGE">                      <!--THIS IS A LABEL ELEMENT ATTRIBUTE OF THE OPTGROUP -->
+                <option value="LOUYI">LOUYI</option>
+                <option value="VEXANA">VEXANA</option>    
+                <option value="VALENTINA">VALENTINA</option>
+                <option value="LUNOX">LUNOX</option>
+                <option value="LYLIA">LYLIA</option> 
+            </optgroup>   
+            <optgroup label="MM" disabled>             <!--THIS IS A DISABLED ELEMENT ATTRIBUTE OF OPTGROUP ELEMENT-->
+                <option value="CLAUDE">CLAUDE</option>
+                <option value="ROGER">ROGER</option>     
+                <option value="MOSKOV">MOSKOV</option>
+                <option value="BEATRIX">BEATRIX</option>
+                <option value="KARRIE">KARRIE</option> 
+            </optgroup>   
+        </select>
+    </form>
+
+    <form>
+        <fieldset>                             <!--C S S     F I E L D S E T -->         
+            <legend>Personalia:</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+    
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+    
+            <label for="birthday">Birthday:</label>  
+            <input type="date" id="birthday" name="birthday"><br><br>
+            
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+   <html>
+      
+     <head>
+        <title> CSS TEXT FORMATTING</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="CSS TEXT FORMATTING">
+        <meta name="keywords" content="formatting, css, text appearance">
+        <meta name="author" content="Rennel Senyahan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+     /* CSS TEXT FORMATTING */
+
+
+     .txt-transform{
+      background-color: rgb(253, 3, 86);
+     }
+
+      .uppercase{
+        text-transform: uppercase;
+      }
+ 
+      .lowercase{
+        text-transform: lowercase;
+      }
+
+      .capitalize{
+        text-transform:capitalize;
+      }
+
+      .unset{
+        text-transform:unset;
+      } 
+
+      .initial{
+        text-transform:initial; 
+
+      }
+
+      .inherit{
+        text-transform:inherit;
+      }
+
+
+                /* T E X T   S H A D O W */ 
+                 
+                 /*horizontal position, vertical,blur and color */
+     .text-shadow{
+      text-shadow: 1px 11px 2px rgb(255,0,0);
+     }
+
+   .negative-ts{
+    text-shadow: -10px -11px 2px rgba(12, 229, 0, 0.862);
+   }
+    
+
+
+                        /*T E X T   A L I G N*/ 
+     
+    .a-center{
+      text-align: center;
+    }
+
+    .a-left{
+      text-align: left;
+    }
+
+    .a-right{
+      text-align: right;
+    }
+
+    .a-justify{
+      text-align: justify;
+    }
+
+    .a-end{
+      text-align: end;
+    }
+
+    
+    
+                               /*T E X T   A L I G N - L A S T */ 
+      #text-align-last{
+        background-color: burlywood;
+      }
+
+      
+     
+      .center-last{
+      text-align-last: center;
+    }
+
+    .left-last{
+      text-align-last: left;
+    }
+
+    .right-last{
+      text-align-last: right;
+    }
+
+    .justify-last{
+      text-align-last: justify;
+    }
+
+    .end-last{
+      text-align-last: end;
+    }
+
+
+                     /* T E X T   S P A C I N G*/
+
+
+   #text-spacing{
+    background-color: aqua;
+   }
+    
+    .text-indent{
+      text-align: justify;
+      text-indent: 32px;
+
+    }
+
+    .letter-spacing{
+      text-align: justify;
+      letter-spacing: 2px;
+    }
+
+    .word-spacing{
+      text-align: justify;
+      word-spacing: 5px;
+    }
+
+    .line-height{
+      text-align: justify;
+      line-height: 34px;
+    }
+
+
+    .w-space-normal{
+      text-align: justify;
+      white-space:normal;
+    }
+
+    .w-space-nowrap{
+      text-align: justify;
+      white-space:nowrap;
+    }
+
+    .w-space-pre{
+      text-align: justify;
+      white-space:pre;
+    }
+
+   b{
+    color:rgb(255, 0, 0);
+   }
+    
+
+    </style>
+     </head>
+ 
+
+
+
+       <body>
+
+
+             <!--  C S S    T E X T   T R A N S F O R M A T I O N -->
+
+       <div class="txt-transform">
+          <form>     
+              <ol type="1">   
+               <li><h1 class="uppercase"> text-transform to uppercase</h1>    </li>
+               <li><h1 class="lowercase"> text transform to lowercase</h1>    </li>
+               <li><h1 class="capitalize"> texr transform to capitalize</h1>  </li>
+               <li><h1 class="unset"> text transform to unset</h1>            </li>
+               <li><h1 class="initial"> text transform to initial</h1>        </li>
+               <li> <h1 class="inherit"> text transform to inherit</h1>       </li>
+                <input type="submit"/>
+              </ol> 
+            </form>
+       </div>
+
+
+       <br>
+              <!--T E X T   S H A D O W -->
+
+       <section id="text-shadow">
+           <div class="text-shadow">
+              <h1> Text Shadow</h1>  
+          </div>
+          <div class="negative-ts">
+               <h1>Negative Text Shadow</h1>
+          </div>
+       </section>
+
+
+       <br>
+
+                              <!--T E X T   A L I G N M E N T -->
+
+          <section id="text-align">
+              <div class="text-align">
+                <p class="a-center"><b>Text align to center </b>Lorem ipsum, 
+                  dolor sit amet consectetur adipisicing elit. 
+                  Atque libero repudiandae velit vitae! </p>
+
+                 <p class="a-right"><b>Text align right</b>Lorem ipsum, 
+                  dolor sit amet consectetur adipisicing elit. 
+                  Atque libero repudiandae velit vitae! </p>
+
+                  <p class="a-left"><b>Text align left</b>  Lorem ipsum, 
+                    dolor sit amet consectetur adipisicing elit. 
+                    Atque libero repudiandae velit vitae!  </p>
+  
+                 <p class="a-justify"><b>Text align justify</b> 
+                   Lorem ipsum, 
+                  dolor sit amet consectetur adipisicing elit. 
+                  Atque libero repudiandae velit vitae! Lorem ipsum 
+                  dolor sit amet consectetur, adipisicing elit. Aliquam 
+                  voluptatem non repellat nulla, nihil minus. Quas 
+                  exercitationem laboriosam beatae quasi harum. Magni voluptates,
+                   eum facilis harum quia quo hic molestias.
+                  </p>
+
+                 <p class="a-end"><b>Text align end</b>  
+                  Lorem ipsum, 
+                  dolor sit amet consectetur adipisicing elit. 
+                  Atque libero repudiandae velit vitae! </p>
+              </div>
+          </section>
+
+ 
+              <br>
+              <br>
+              
+                   <!--T E X T   A L I G N - L A S T -->
+
+          <section id="text-align-last">
+            <div class="text-align-last">
+              <p class="center-last"><b>Text align to center last </b>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Placeat quos debitis corrupti iure quas libero amet officiis natus earum, 
+                quibusdam accusantium nesciunt! Maxime earum voluptatem sit doloremque exercitationem fuga 
+                ipsa.</p>
+
+               <p class="right-last"><b>Text align right last</b>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Sequi facilis accusamus quidem mollitia eos obcaecati aspernatur 
+                adipisci iste saepe, eaque quam quos rem iure culpa. Ducimus earum quis exercitationem in. </p>
+
+                <p class="left-last"><b>Text align left last</b> Lorem ipsum, dolor sit amet consectetur 
+                  adipisicing elit. Cumque repellat blanditiis quasi alias itaque placeat exercitationem 
+                  molestiae nihil possimus eos fugiat, nesciunt amet voluptatum, ipsa neque, tenetur 
+                  doloremque soluta? Ea? </p>
+
+               <p class="justify-last"><b>Text align justify last</b> 
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius odio laborum delectus ducimus
+                  minus sit, temporibus repellat consequatur eum ex eaque exercitationem vitae commodi odit 
+                  deserunt animi tenetur perferendis unde.
+                </p>
+
+               <p class="end-last"><b>Text align end last</b>  
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia doloribus eum vero. 
+                Non aperiam rerum officia laboriosam accusamus maxime error fugiat dolore, voluptas iste 
+                illum odio laborum reprehenderit esse neque! </p>
+            </div>
+        </section>
+
+
+        <br>
+        <br>
+
+
+                          <!--T E X T   S P A C I N G  -->
+
+    <section id="text-spacing">
+      <div class="text-spacing">
+        
+        <p class="text-indent"><b>TEXT- INDENT:  </b>Lorem ipsum dolor sit amet consectetur 
+          adipisicing elit. Placeat quos debitis corrupti iure quas libero amet officiis natus earum, 
+          quibusdam accusantium nesciunt! Maxime earum voluptatem sit doloremque exercitationem fuga 
+          ipsa.</p>
+
+         <p class="letter-spacing"><b>LETTER-SPACING</b>Lorem ipsum dolor sit amet consectetur 
+          adipisicing elit. Sequi facilis accusamus quidem mollitia eos obcaecati aspernatur 
+          adipisci iste saepe, eaque quam quos rem iure culpa. Ducimus earum quis exercitationem in. </p>
+
+          <p class="word-spacing"><b>WORD SPACING</b> Lorem ipsum, dolor sit amet consectetur 
+            adipisicing elit. Cumque repellat blanditiis quasi alias itaque placeat exercitationem 
+            molestiae nihil possimus eos fugiat, nesciunt amet voluptatum, ipsa neque, tenetur 
+            doloremque soluta? Ea? </p>
+
+         <p class="line-height"><b>LINE HEIGHT</b> 
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius odio laborum delectus ducimus
+            minus sit, temporibus repellat consequatur eum ex eaque exercitationem vitae commodi odit 
+            deserunt animi tenetur perferendis unde.
+          </p>
+
+          <p class="w-space-normal"><b> NORMAL WHITE SPACE</b>  
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia doloribus eum vero. 
+            Non aperiam rerum officia laboriosam accusamus maxime error fugiat dolore, voluptas iste 
+            illum odio laborum reprehenderit esse neque! </p>
+
+         <p class="w-space-nowrap"><b> NO WRAP WHITE SPACE</b>  
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia doloribus eum vero. 
+          Non aperiam rerum officia laboriosam accusamus maxime error fugiat dolore, voluptas iste 
+          illum odio laborum reprehenderit esse neque! </p>
+
+           <p class="w-space-pre"><b>PRE WHITE SPACE</b>  
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia doloribus eum vero. 
+          Non aperiam rerum officia laboriosam accusamus maxime error fugiat dolore, voluptas iste 
+          illum odio laborum reprehenderit esse neque! </p>
+      </div>
+  </section> 
+
+
+       </body>
+
+
+
+
+ </html>

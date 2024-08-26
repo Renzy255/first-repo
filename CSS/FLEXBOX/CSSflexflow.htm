@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+      <meta>
+      <meta charset="UTF-8">
+      <meta name="description" content="CSS OUTLINE">
+      <meta name="keywords" content="CSS, BOX MODEL">
+      <meta name="author" content="Rennel Senyahan">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+      <style>
+
+             body{
+               margin:0;
+               display:grid;
+               justify-content: center;
+             }
+             
+            h1{
+              text-align: center;
+              word-spacing: 60px;
+            }
+
+              #df-ff-col{
+                width: 900px;
+                height: 500px;
+                border:2px solid green;
+                margin: 4px 4px 4px 4px;
+                display: flex;
+                flex-flow:column;
+
+                }
+
+                .df-ff-col{
+                width: 80px;
+                height: 80px;
+                border:2px solid black;
+                margin: 2px 2px 2px 2px;
+                
+                }
+
+               
+
+                  
+                #df-ff-col-rvrse{
+                  width: 900px;
+                height: 500px;
+                border:2px solid green;
+                margin: 4px 4px 4px 4px;
+                display: flex;
+                flex-flow: column-reverse;
+                
+  
+                 
+                }
+
+                .df-ff-col-rvrse{
+                width: 80px;
+                height: 80px;
+                border:2px solid black;
+                margin: 2px 2px 2px 2px;
+                }
+
+
+
+
+                #df-ff-wrap{
+                  width: 900px;
+                height: 500px;
+                border:2px solid green;
+                margin: 4px 4px 4px 4px;
+                display: flex;
+                flex-flow: wrap;
+                
+  
+                 
+                }
+
+                .df-ff-wrap{
+                width: 80px;
+                height: 80px;
+                border:2px solid black;
+                margin: 2px 2px 2px 2px;
+                }
+
+
+
+
+                #df-ff-wrap-rvrse{
+                  width: 900px;
+                height: 500px;
+                border:2px solid green;
+                margin: 4px 4px 4px 4px;
+                display: flex;
+                flex-flow: wrap-reverse;
+                
+  
+                 
+                }
+
+                .df-ff-wrap-rvrse{
+                width: 80px;
+                height: 80px;
+                border:2px solid black;
+                margin: 2px 2px 2px 2px;
+                }
+
+              
+
+                #df-ff-nowrap{
+                  width: 900px;
+                  height: 500px;
+                border:2px solid green;
+                margin: 4px 4px 4px 4px;
+                display: flex;
+                flex-flow: nowrap;
+                
+  
+                 
+                }
+
+                .df-ff-nowrap{
+                width: 80px;
+                height: 80px;
+                border:2px solid black;
+                margin: 2px 2px 2px 2px;
+                }
+
+
+
+
+                #df-ff-row{
+                  width: 900px;
+                  height: 500px;
+                border:2px solid green;
+                margin: 4px 4px 4px 4px;
+                display: flex;
+                flex-flow: row;
+                
+  
+                 
+                }
+
+                .df-ff-row{
+                width: 80px;
+                height: 80px;
+                border:2px solid black;
+                margin: 2px 2px 2px 2px;
+                }
+                 
+
+
+                #df-ff-row-rvrse{
+                  width: 900px;
+                  height: 500px;
+                border:2px solid green;
+                margin: 4px 4px 4px 4px;
+                display: flex;
+                flex-flow: row-reverse;
+                }
+
+                .df-ff-row-rvrse{
+                width: 80px;
+                height: 80px;
+                border:2px solid black;
+                margin: 2px 2px 2px 2px;
+                }
+
+
+
+/*=============================================================================================*/
+
+
+
+        </style>
+    </head>
+
+        <body>
+             <h1>DISPLAY-FLEX        FLEX-FLOW</h1>
+
+              <div id="df-ff-col"> 
+                  <div class="df-ff-col">DF-FLEX-FLOW<br>:COLUMN</div>
+                  <div class="df-ff-col">DF-FLEX-FLOW<br>:COLUMN</div>
+                  <div class="df-ff-col">DF-FLEX-FLOW<br>:COLUMN</div>
+                  <div class="df-ff-col">DF-FLEX-FLOW<br>:COLUMN</div>
+              </div>
+
+               
+              <br>
+              <br>
+
+
+              <div id="df-ff-col-rvrse"> 
+                <div class="df-ff-col-rvrse">DF-FLEX-FLOW<br>:COLUMN-REVERSE</div>
+                <div class="df-ff-col-rvrse">DF-FLEX-FLOW<br>:COLUMN-REVERSE</div>
+                <div class="df-ff-col-rvrse">DF-FLEX-FLOW<br>:COLUMN-REVERSE</div>
+                <div class="df-ff-col-rvrse">DF-FLEX-FLOW<br>:COLUMN-REVERSE</div>
+            </div>
+
+            <br>
+            <br>
+                  
+             
+            <div id="df-ff-wrap"> 
+              <div class="df-ff-wrap">DF-FLEX-FLOW<br>:WRAP</div>
+              <div class="df-ff-wrap">DF-FLEX-FLOW<br>:WRAP</div>
+              <div class="df-ff-wrap">DF-FLEX-FLOW<br>:WRAP</div>
+              <div class="df-ff-wrap">DF-FLEX-FLOW<br>:WRAP</div>
+          </div>
+
+
+
+          <br>
+          <br>
+                
+           
+          <div id="df-ff-wrap-rvrse"> 
+            <div class="df-ff-wrap-rvrse">DF-FLEX-FLOW<br>:WRAP-REVERSE</div>
+            <div class="df-ff-wrap-rvrse">DF-FLEX-FLOW<br>:WRAP-REVERSE</div>
+            <div class="df-ff-wrap-rvrse">DF-FLEX-FLOW<br>:WRAP-REVERSE</div>
+            <div class="df-ff-wrap-rvrse">DF-FLEX-FLOW<br>:WRAP-REVERSE</div>
+        </div>
+
+
+        <br>
+        <br>
+              
+         
+        <div id="df-ff-nowrap"> 
+          <div class="df-ff-nowrap">DF-FLEX-FLOW<br>:NO-WRAP</div>
+          <div class="df-ff-nowrap">DF-FLEX-FLOW<br>:NO-WRAP</div>
+          <div class="df-ff-nowrap">DF-FLEX-FLOW<br>:NO-WRAP</div>
+          <div class="df-ff-nowrap">DF-FLEX-FLOW<br>:NO-WRAP</div>
+      </div>
+
+      <br>
+      <br>
+            
+
+      <div id="df-ff-row"> 
+        <div class="df-ff-row">DF-FLEX-FLOW<br>:ROW</div>
+        <div class="df-ff-row">DF-FLEX-FLOW<br>:ROW</div>
+        <div class="df-ff-row">DF-FLEX-FLOW<br>:ROW</div>
+        <div class="df-ff-row">DF-FLEX-FLOW<br>:ROW</div>
+    </div>
+
+
+    <br>
+    <br>
+          
+        <div id="df-ff-row-rvrse"> 
+          <div class="df-ff-row-rvrse">DF-FLEX-FLOW<br>:ROW-REVERSE</div>
+          <div class="df-ff-row-rvrse">DF-FLEX-FLOW<br>:ROW-REVERSE</div>
+          <div class="df-ff-row-rvrse">DF-FLEX-FLOW<br>:ROW-REVERSE</div>
+          <div class="df-ff-row-rvrse">DF-FLEX-FLOW<br>:ROW-REVERSE</div>
+       </div>
+    
+
+        </body>
+
+ 
+</html> 

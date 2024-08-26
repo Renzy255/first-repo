@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="CSS BOX MODEL">
+    <meta name="keywords" content="border, padding, margin, content">
+    <meta name="author" content="Rennel Senyahan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BOX MODEL</title>
+
+    <style>
+        body {
+            margin: 0px; /*TO REMOVE THE EXISTING MARGIN*/
+        }
+
+        .box-mod {
+            background-color: salmon;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid black;
+            
+        }
+
+        .pad-top {
+            background-color: salmon;
+            padding-top: 20px;
+        }
+
+        .pad-right {
+            background-color: salmon;
+            padding-right: 20px;
+        }
+
+        .pad-bottom {
+            background-color: salmon;
+            padding-bottom: 20px;
+        }
+
+        .pad-left {
+            background-color: salmon;
+            padding-left: 20px;
+        }
+
+        /* PADDING Y (TOP AND BOTTOM) PADDDING X (LEFT AND RIGHT) */
+        .x-y {
+            background-color: salmon;
+            padding: 20px 30px;
+        }
+
+        .trbl {
+            background-color: salmon;
+            padding: 10px 15px 20px 30px;
+        }
+
+        /* C S S    M A R G I N */
+        .marg-top {
+            background-color: aqua;
+            margin-top: 80px;
+        }
+
+        .marg-right {
+            background-color: aqua;
+            margin-right: 90px;
+        }
+ 
+        .marg-bottom {
+            background-color: aqua;
+            margin-bottom: 80px;
+        }
+
+        .marg-left {
+            background-color: aqua;
+            margin-left: 30px;
+        }
+
+        /* C S S B O R D E R */
+        .border { /* WIDTH STYLE COLOR */ /*ORDER DOES NOT MATTER*/
+            border: 2px solid yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- B O X M O D E L -->
+    <h1 class="box-mod"> BOX MODEL</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- P O S I T I O N I N G    O F     B A C K G R O U N D -->
+    <div class="pad-top">
+        <h1>PADDING TOP </h1>
+    </div>
+    <br>
+
+    <div class="pad-right">
+        <h1>PADDING RIGHT </h1>
+    </div>
+    <br>
+
+    <div class="pad-bottom">
+        <h1>PADDING BOTTOM </h1>
+    </div>
+    <br>
+
+    <div class="pad-left">
+        <h1>PADDING LEFT </h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <p>padding: 20px 30px;</p>
+    <div class="x-y">
+        <h1> PADDING Y (top & bottom) PADDING X (left & right)</h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <p>10px 15px 20px 30px</p>
+    <div class="trbl">
+        <h1> PADDING (TOP, RIGHT, BOTTOM, LEFT)</h1>
+    </div>
+
+    <!-- C S S M A R G I N -->
+    <div class="marg-top">
+        <h1> MARGIN TOP </h1>
+    </div>
+
+    <div class="marg-right">
+        <h1> MARGIN RIGHT </h1>
+    </div>
+
+    <div class="marg-bottom">
+        <h1> MARGIN BOTTOM </h1>
+    </div>
+
+    <div class="marg-left">
+        <h1> MARGIN LEFT </h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3 style="font-style: italic;">CSS BORDER</h3>
+                                                     <!-- C  S S B O R D E R -->
+    <div class="border">
+        <h1> SOLID border </h1>
+    </div>
+</body>
+</html>

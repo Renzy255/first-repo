@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+ <html lang="en"> 
+      
+ <head>
+      <title> CSS FULL COURSE</title>
+      <meta> 
+      
+      <meta charset="UTF-8">
+      <meta name="description" content="CSS COURSE">
+      <meta name="keywords" content="CSS">
+      <meta name="author" content="Rennel Senyahan">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+
+      <style>
+
+      /*
+         .color{
+          color: rgb(153, 89, 4);
+         }
+
+         #color{
+          color: rgb(204, 10, 10);
+         }
+      
+     
+      .powerful{
+        color:blue;
+      }
+       
+      #powerful{
+      color: black;
+     }
+
+    
+    #inline{
+      color: blueviolet;
+    }
+    */
+
+    li:first-child{
+      color: aqua;
+    }
+   
+    li:last-child{
+      color: rgb(242, 136, 6);
+    }
+                                                      /*P S E U  D O     S E L E  C T O R S*/
+                                                                             
+    li:nth-child(2){
+      color: rgb(32, 220, 39);                             
+    }
+
+    li:only-child{
+      color: crimson;
+    }
+  
+
+   .google-link:link {
+      color: aqua;
+   }
+ 
+   .google-link:visited {
+    color: red;
+}
+
+  
+h1 + .advanced{
+   color:gold;
+}
+
+      </style>
+ </head>
+ 
+   <body>
+
+     <!--        
+      <p class="color">.CLASS</p>                   /S I M P L E   S E L E C T O R/
+      <p id="color">#ID</p>  -->  
+       
+
+   <!-- <p class="powerful">POWERFUL SELECTOR</p>
+                                                      
+     <p class="powerful" id="powerful">POWERFUL</p>              /*G U E S S I N G   W H O   I S  M O R E   P O W E R F UL*/
+
+     <p id="inline" style="color:deeppink">INLINE CSS</p>    -->
+
+      <ul>
+         <li>FIRST</li>
+         <li>SECOND</li>
+         <li>THIRD</li>
+      </ul>
+
+      <ul>      
+         <li> ONLY</li>
+      </ul>
+
+
+       <a href="http://www.google.com" alt="googlelink" class="google-link">Google</a>
+
+
+       <h1>Advanced Selector</h1>
+       <a href="http://www.google.com" class="advanced">ADVANCED SELECTOR</a>
+        
+       
+   </body>
+
+
+ </html>

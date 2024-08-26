@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+    <html>
+       <head>
+          <title>CSS FLOAT  AND CLEAR PROPERTY</title>
+          <meta charset="UTF-8">
+          <meta name="description" content="CSS FLOAT">
+          <meta name="keywords" content="CSS, FLOAT  clear CSS image">
+          <meta name="author" content="Rennel Senyahan">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+          <style>
+             #float-left{
+                width: 100px;
+                height: 100px;
+                margin-right: 10px;
+                float: left;
+             } 
+
+             #float-right{
+                width: 100px;
+                height: 100px;
+                margin-right: 10px;
+                float: right;
+             } 
+
+
+
+
+             #clear-right{
+                width: 100px;
+                height: 100px;
+                margin-right: 10px;
+                float: left;
+             } 
+          
+             .clear-right{
+               clear: right;
+             }
+
+
+             #clear-left{
+                width: 100px;
+                height: 100px;
+                margin-right: 10px;
+                float: right;
+             } 
+          
+             .clear-left{
+               clear: left;
+             }
+
+
+
+            #clear-both{
+                margin-top: 100px;
+                 display: flex;
+                 justify-content: space-between;
+            }
+              .clear-both{
+               clear: both; 
+             }
+    
+
+
+
+
+
+          </style>
+
+
+       </head>
+
+      <body>
+          <img src="coding.jpg" alt="" id="float-left">    
+         
+          <p>The float: left; property in CSS is used to make an element (like a div, image, 
+            or paragraph) align to the left side of its container. When you apply float: left; 
+            to an element, it will move to the left edge, and other content will wrap around it 
+            on the right side.
+          <p>
+
+            <br>
+            <br>
+            
+          <img src="coding.jpg" id="float-right">        
+            <p> The float: right; property in CSS is used to make an element (like a div, 
+                  image, or paragraph) move to the right side of its container. When you apply 
+                  float: right; to an element, it will align to the right edge, and other content 
+                  (like text or other elements) will wrap around it on the left side.
+            </p>
+
+
+           <img src="coding.jpg" id="clear-right">        
+             <p class="clear-right"> The clear: right; property in CSS is used to prevent an 
+               element from sitting next to (on the right side of) any floated elements. When 
+               you apply clear: right; to an element, it will move down below any elements that 
+               are floated to the right.
+             </p>
+
+             <img src="coding.jpg" id="clear-left">        
+             <p class="clear-left"> The clear: left; property in CSS is used to prevent an 
+               element from sitting next to (on the left side of) any floated elements. When 
+               you apply clear: left; to an element, it will be pushed down below any elements 
+               that are floated to the left.
+             </p>
+ 
+ 
+         <div id="clear-both">
+             <img src="coding.jpg" class="clear-both">
+             <img src="coding.jpg" class="clear-both">
+          </div>
+          <p class="clear-both"> The clear: both; property is used to control how an element 
+            interacts with floated elements above it. Specifically, when you apply clear: both; 
+            to an element, you are telling the browser that this element should not sit next to any 
+            floated elements—whether they are floated to the left or right. Instead, the element with 
+            clear: both; will be pushed down until it is completely below all preceding floated elements.
+          </p>
+          
+        
+      </body>
+        
+
+        
+    </html>

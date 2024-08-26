@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="text, decoration, text appearance">
+    <meta name="author" content="Rennel Senyahan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS DISPLAY PROPERTY</title>
+  
+     <style>
+           div{
+            width: 60%;
+            height: 100px;
+            background-color: green;
+           }
+
+            span{
+                width: 100px;
+                height: 100px;                   /*THIs will not work*/
+                margin-bottom: -20px;
+                background-color: yellow;
+            } 
+
+            #block-div{
+            width: 60%;
+            height: 100px;
+            margin-top: 70px;
+            background-color: green;
+            }
+
+            
+            #block-span{
+            background-color: yellow;
+            margin-bottom: 100px;
+            display: block;
+            }
+
+
+
+
+            #inline-div{
+            width: 60%;
+            height: 100px;
+            margin-top: 100px;
+            background-color: green;
+            display: inline;
+            }
+
+            
+            #inline-span{
+            background-color: yellow;
+            display: inline;
+            }
+
+
+
+            #inline-block-div{
+            width: 60%;
+            height: 100px;
+            margin-top: 100px;
+            background-color: green;
+            display: inline-block;
+            }
+
+            
+            #inline-block-span{
+            background-color: yellow;
+            display: inline-block;
+            }
+
+
+
+
+
+
+
+
+     </style>
+</head>
+
+    <body>
+        <div>DIV</div>
+        <span> SPAN</span>
+
+     <div id="block-div">DIV</div>
+     <span id="block-span"> SPAN WHEN DISPLAY BLOCK</span>
+
+     <div id="inline-div">DIV</div>
+     <span id="inline-span">INLINE</span>
+
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugit ex 
+        praesentium, sapiente possimus quaerat rem aperiam beatae reiciendis animi 
+        molestias provident error voluptates ipsum voluptas quasi officiis? Soluta, 
+        amet!
+
+        <div id="inline-block-div">DIV</div>
+        <span id="inline-block-span">INLINE-BLOCK </span>
+   
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugit ex 
+           praesentium, sapiente possimus quaerat rem aperiam beatae reiciendis animi 
+           molestias provident error voluptates ipsum voluptas quasi officiis? Soluta, 
+           amet!
+      
+   
+
+
+   
+
+
+
+    </body>
+
+ </html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS OVERFLOW</title>
+   
+     <style> 
+      
+
+        h1{
+            text-align: center;
+            margin-bottom: 5px;
+        } 
+         
+
+        h2{
+          margin-right:150px;
+        }
+        
+
+            .section1{     
+            min-height: 100px;            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          
+             }
+
+
+        .of-visible{ 
+            border: 2px solid black;
+            height:70px;
+            width: 400px;
+            align-items: center;
+            margin-right: 420px;
+            overflow: visible;               /* D E F A  U L T   V A L U E */
+           
+                                                  
+
+        } 
+
+
+ 
+
+            .section2{     
+            min-height: 100px;            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+          
+             }
+
+
+        .of-hidden{ 
+            border: 2px solid black;
+            height:70px;
+            width: 400px;
+            align-items: center;
+            margin-right: 420px;
+            overflow: hidden;               /* STILL CAN COPY THE TEXT */
+           
+                                                  
+
+        }  
+
+         
+        .section3{     
+            min-height: 100px;            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 70px;
+          
+             }
+
+
+        .of-clip{ 
+            border: 2px solid black;
+            height:70px;
+            width: 400px;
+            align-items: center;
+            margin-right: 380px;
+            overflow: clip;               /* SET WHAT YOU CAN SEE OUTSIDE THE BORDER*/
+            overflow-clip-margin: 12px;
+           
+                                                  
+
+        } 
+
+
+        .section4{     
+            min-height: 100px;            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 70px;
+          
+             }
+
+
+        .of-scroll{ 
+            border: 2px solid black;
+            height:70px;
+            width: 400px;
+            align-items: center;
+            margin-right: 420px;
+            overflow: scroll;               /* C R E A T E S    A   S R O L L    B A R*/
+          
+           
+        } 
+
+
+        .section5{     
+            min-height: 100px;            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 70px;
+          
+             }
+
+
+        .of-auto{ 
+            border: 2px solid black;
+            height:70px;
+            width: 400px;
+            align-items: center;
+            margin-right: 420px;
+            overflow: auto;               /* C R E A T E S    A   S R O L L    B A R*/
+          
+           
+        } 
+
+
+
+     </style>
+</head>
+
+    <body> 
+               
+            <h1>CSS OVERFLOW</h1>
+        <section class="section1">  
+
+              <h2>OVERFLOW: VISIBLE</h2>    
+         <div class="of-visible">
+                <p>This is the default setting for the overflow property, meaning any 
+                    content that spills over the edges of its container will be shown 
+                    outside the container's box. This can be useful for designs where overflow 
+                    content is intentional and should remain visible without restrictions.
+                </p>
+          </div> 
+      </section>  
+        
+      <section class="section2">  
+         <h2>OVERFLOW: HIDDEN</h2>    
+           <div class="of-hidden">
+            <p>This value hides any content that extends beyond the bounds of its container, 
+                effectively clipping off the overflowed parts and making them invisible. Its 
+                useful for creating clean, contained layouts where you don't want any content 
+                to be displayed outside the designated area.
+            </p>
+         </div> 
+     </section> 
+
+
+       <section class="section3">  
+         <h2>OVERFLOW: CLIP</h2>    
+           <div class="of-clip">
+              <p>
+                The overflow: clip; property hides any content that extends beyond the 
+                containers border, ensuring that overflowed content is clipped and not 
+                visible outside the container. The overflow-clip-margin: 12px; property 
+                adds a 12-pixel margin inside the container’s border, creating a buffer zone 
+                before the content is clipped, which helps fine-tune the clipping effect.
+              </p>
+          </div> 
+    </section> 
+     
+        <section class="section4">  
+             <h2>OVERFLOW: SCROLL</h2>    
+               <div class="of-scroll">
+                    <p>When you set overflow to scroll, scrollbars will always appear on the 
+                        container, regardless of whether the content actually overflows or not. 
+                        This ensures that users can always scroll to see the content, but can 
+                        result in unnecessary scrollbars if the content fits within the container.
+                   </p>
+             </div> 
+           </section> 
+
+           <section class="section5">  
+            <h2>OVERFLOW: AUTO</h2>    
+              <div class="of-auto">
+                   <p>The auto value adds scrollbars to the container only when the content 
+                    exceeds the containers dimensions, otherwise, no scrollbars are shown. 
+                    This makes it a flexible option for handling overflow, as it only introduces 
+                    scrollbars when necessary.
+                  </p>
+            </div> 
+          </section> 
+s
+
+        
+        
+    </body>
+
+ </html>
+
+

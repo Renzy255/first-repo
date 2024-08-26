@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+      <meta>
+      <meta charset="UTF-8">
+      <meta name="description" content="CSS OUTLINE">
+      <meta name="keywords" content="CSS, BOX MODEL">
+      <meta name="author" content="Rennel Senyahan">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+      <style>
+
+             body{
+                 margin: 1%;
+               
+
+             }
+              
+             #container{
+                width: 50%;
+                height:50%;
+                margin :2px 2px 2px 2px;
+                border:solid 2px black;
+                display:flex;
+            
+              
+            }
+
+            .col{
+               max-width: 80px;
+               min-height: 80px;
+               border:solid 2px gold;
+               margin: 4px 4px 4px 4px;
+           
+               
+            }
+          
+        
+
+            #fd-r{
+              width: 800px;
+              min-height:400px;
+              border: 2px solid brown;
+              margin-bottom:20px;
+              display: flexbox;
+              flex-direction: row-reverse;
+              
+            }
+         
+
+            .fd-r{
+               max-width: 80px;
+               min-height: 80px;
+               border:solid 2px gold;
+               margin: 4px 4px 4px 4px;
+               
+            }
+
+
+
+
+            #fd-rr{
+              width: 800px;
+              min-height:400px;
+              border: 2px solid brown;
+              margin-bottom: 10px;
+              display: flexbox;
+              flex-direction: row-reverse;
+              
+            }
+         
+
+            .fd-rr{
+               max-width: 80px;
+               min-height: 80px;
+               border:solid 2px gold;
+               margin: 4px 4px 4px 4px;
+           
+               
+            }
+
+
+         
+      </style>
+
+
+ </head>
+
+
+  <body>
+
+     
+    <div id="container"> 
+      <div class="col"> CON1</div>
+      <div class="col"> CON2</div>
+      <div class="col"> CON3</div>
+      <div class="col"> CON3</div> 
+  </div>
+  
+
+ 
+     
+
+    <div id="fd-r">
+        <div class="fd-r">ROW</div>
+        <div class="fd-r">ROW</div>
+        <div class="fd-r">ROW</div>
+        <div class="fd-r">ROW</div>
+    </div>
+
+
+    <div id="fd-rr">
+        <div class="fd-rr">ROW-REVERSE</div>
+        <div class="fd-rr">ROW-REVERSE</div>
+        <div class="fd-rr">ROW-REVERSE</div>
+        <div class="fd-rr">ROW-REVERSE</div>
+    </div>
+
+
+   
+
+
+
+
+
+
+
+  </body>
+

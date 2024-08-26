@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="CSS BOX SHADOW">
+    <meta name="keywords" content="border, padding, margin, content">
+    <meta name="author" content="Rennel Senyahan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BOX MODEL</title>
+
+    <style>
+
+.container{        /*back-shadow: x-off, y-off,  color */
+        height:100px;
+        width:100px;
+        box-shadow: 5px 5px greenyellow;    /*x-off, y-off,  color */
+        border: 1px solid black;
+        
+     }
+
+
+     .container2{        /*back-shadow: x-off, y-off,  color */
+        height:100px;
+        width:100px;
+        box-shadow: -5px -5px greenyellow;    /* negative */
+        border: 1px solid black;
+        
+     }
+
+
+                     /* B L U R  */
+
+        .container3{        /*back-shadow: x-off, y-off, blur, color */
+        height:100px;
+        width:100px;
+        box-shadow: 5px 5px 6px greenyellow;    
+        
+                
+     }
+
+
+     .container4{        /*back-shadow: x-off, y-off, blur, color */
+        height:100px;
+        width:300px;
+        box-shadow: 5px 5px 6px rgba(91, 91, 83, 0.967);    /*USING RGBA*/
+        
+                
+     }
+
+      
+     .container5{      /*back-shadow: x-off, y-off, blur, spread, color */
+        height:100px;
+        width:300px;
+        box-shadow: 10px 5px 6px 5px rgba(91, 91, 83, 0.967);       /* S P R E A D  */
+        
+     }     
+
+
+            /* BOX-SHADOW- INSET */
+
+        .container6{      /*back-shadow: x-off, y-off, blur, spread, color, INSET */
+        height:100px;
+        width:300px;
+        box-shadow: 5px 5px 3px 5px rgba(0, 0, 0, 0.444) inset;       /*shadow inside the box*/
+        
+     }     
+
+
+      
+            /*  MULTIPLE BOX-SHADOW-  */
+
+        .container7{                   /*back-shadow: x-offset, y-offset, blur, spread, color */
+        height:100px;
+        width:300px;              
+        box-shadow: 3px 3px 3px 3px grey,  -3px -3px 3px 3px grey;       /*MULTIPLE BOX SHADOW*/
+        
+     }     
+
+
+      
+
+
+
+    </style>
+ 
+              </head>
+   
+
+        <body>
+
+        <div class="container">BOX-SHADOW</div>
+        </body>
+
+        <br>
+        <br>
+
+        <div class="container2">BOX-SHADOW </div>
+
+
+        <br>
+        <br>
+
+        <div class="container3">BOX-SHADOW BLURRED </div>
+
+
+        <br>
+        <br>
+
+        <div class="container4">BOX-SHADOW BLURRED WITH RGBA</div>
+
+
+                <!--S H A D O W   S P R E A D-->
+
+
+        <br>
+        <br>
+        
+         <div class="container5">BOX-SHADOW BLURRED SPREAD</div>
+
+
+         <br>
+         <br>
+
+        <div class="container6">BOX-SHADOW INSET</div>
+
+        <br>
+        <br>
+
+        <br>
+        <br>
+
+        <div class="container7">MULTIPLE BOX SHADOW</div>
+
+        <br>
+        <br>
+
+
+
+       </body>
+
+
+
+        </html>

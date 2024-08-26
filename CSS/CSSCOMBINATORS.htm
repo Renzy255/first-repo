@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+     <title> CSS COMBINATORS  </title>
+        <meta charset="UTF-8">
+        <meta name="description" content="CSS COMBINATORS">
+        <meta name="keywords" content="CSS, Combinators, CSS">
+        <meta name="author" content="Rennel Senyahan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+         
+
+        <style>
+            #descendant{
+                border: solid 1px;
+            }
+
+            #descendant p{
+                text-decoration: underline;
+                background-color: rgba(234, 242, 0, 0.439);
+            }
+
+
+            #child{
+                border: solid 1px;
+            }
+
+            #child > p{
+                text-decoration: underline;
+                background-color: rgba(234, 242, 0, 0.439);
+            }
+
+
+            #general-sibling{
+                border: solid 1px;
+            }
+
+            #general-sibling ~ p{
+                text-decoration: underline;
+                background-color: rgba(234, 242, 0, 0.439);
+            }
+
+
+            #adja-sibling{
+                border: solid 1px;
+            }
+
+            #adja-sibling + p{
+                text-decoration: underline;
+                background-color: rgba(234, 242, 0, 0.439);
+            }
+        </style>
+  </head>
+
+  <body>
+       <h1 style="text-align: center;">CSS COMBINATOR</h1> 
+     <section>                    
+          <div id="descendant">
+              <p>CSS DESCENDANT1</p>
+              <p>CSS DESCENDANT2</p>
+              <p>CSS DESCENDANT3</p> 
+                 <div>
+                    <p>CHILD4</p>
+                    <p>CHILD5</p>
+                </div>
+          </div> 
+            <p>ADJACENT -SIBLING6</p>
+            <p>GENERAL-SIBLING</p>
+            <p>GENERAL-SIBLING</p>
+
+
+    </section>
+
+       <br>
+       <br>
+
+        <section>                    
+            <div id="child">
+                <p>CSS DESCENDANT1</p>
+                <p>CSS DESCENDANT2</p>
+                <p>CSS DESCENDANT3</p> 
+                <div>
+                    <p>CHILD4</p>
+                    <p>CHILD5</p>
+                </div>
+            </div> 
+                <p>ADJACENT -SIBLING6</p>
+                <p>GENERAL-SIBLING</p>
+                <p>GENERAL-SIBLING</p>
+    </section> 
+      
+       <br>
+       <br>
+
+        <section>                    
+            <div id="general-sibling">
+                <p>CSS DESCENDANT1</p>
+                <p>CSS DESCENDANT2</p>
+                <p>CSS DESCENDANT3</p> 
+    
+                <div>
+                    <p>CHILD4</p>
+                    <p>CHILD5</p>
+
+                </div>
+            </div> 
+            <p>ADJACENT -SIBLING6</p>
+            <p>GENERAL-SIBLING</p>
+            <p>GENERAL-SIBLING</p>
+  
+    </section> 
+       
+            <br>
+            <br>
+            <br>
+            <br>
+
+        <section>                    
+            <div id="adja-sibling">
+                <p>CSS DESCENDANT1</p>
+                <p>CSS DESCENDANT2</p>
+                <p>CSS DESCENDANT3</p> 
+            <div> 
+                <p>CHILD4</p>
+                <p>CHILD5</p>
+                </div>
+            </div> 
+               <p>ADJACENT -SIBLING6</p>
+               <p>GENERAL-SIBLING</p>
+               <p>GENERAL-SIBLING</p>
+
+        </section>
+
+
+ 
+  </body>
+ 
+</html>

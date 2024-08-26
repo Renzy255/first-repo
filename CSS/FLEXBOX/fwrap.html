@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+      <meta>
+      <meta charset="UTF-8">
+      <meta name="description" content="CSS OUTLINE">
+      <meta name="keywords" content="CSS, BOX MODEL">
+      <meta name="author" content="Rennel Senyahan">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+      <style>
+
+             body{
+               margin:0;
+             }
+
+              #container{
+                width: 500px;
+                height: 300px;
+                border:2px solid green;
+                margin: 4px 4px 4px 4px;
+                display: flex;
+                flex-wrap: wrap;
+          
+
+        
+              }
+
+              .f-wrap{
+                width: 80px;
+                height: 80px;
+                border:2px solid black;
+                background-color: rgb(3, 232, 205);
+                margin: 4px 4px 0px 4px;
+              
+              }
+
+
+              #no-wrap{
+                width: 500px;
+                height: 500px;
+                border:2px solid green;
+                margin: 4px 4px 4px 4px;
+                display: flex;
+                flex-wrap:nowrap;
+        
+              }
+
+              .no-wrap{
+                width: 80px;
+                height: 80px;
+                border:2px solid black;
+                background-color: rgb(3, 232, 205);
+                margin: 4px 4px 4px 4px;
+              }
+
+
+
+
+              #wrap-reverse{
+                width: 500px;
+                height: 500px;
+                border:2px solid green;
+                margin: 4px 4px 4px 4px;
+                display: flex;
+                flex-wrap:wrap-reverse;
+        
+              }
+
+              .wrap-reverse{
+                width: 80px;
+                height: 80px;
+                border:2px solid black;
+                background-color: rgb(3, 232, 205);
+                margin: 4px 4px 4px 4px;
+              }
+
+
+
+        </style>
+    </head>
+
+        <body>
+            
+              <div id="container"> 
+                  <div class="f-wrap" id="one">FLEX-WRAP</div>
+                  <div class="f-wrap" id="two">FLEX-WRAP</div>
+                  <div class="f-wrap" id="three">FLEX-WRAP</div>
+                  <div class="f-wrap" id="four">FLEX-WRAP</div>
+                  <div class="f-wrap" id="five">FLEX-WRAP</div>
+                  <div class="f-wrap" id="six">FLEX-WRAP</div>
+                  <div class="f-wrap" id="seven">FLEX-WRAP</div>
+                  <div class="f-wrap" id="eight">FLEX-WRAP</div>
+                  <div class="f-wrap" id="nine">FLEX-WRAP</div>
+                  <div class="f-wrap" id="ten">FLEX-WRAP</div>
+              </div>
+
+              <br>
+              <br>
+
+              <div id="no-wrap"> 
+                <div class="no-wrap">F-NO-WRAP</div>
+                <div class="no-wrap">F-NO-WRAP</div>
+                <div class="no-wrap">F-NO-WRAP</div>
+                <div class="no-wrap">F-NO-WRAP</div>
+                <div class="no-wrap">F-NO-WRAP</div>
+                <div class="no-wrap">F-NO-WRAP</div>
+                <div class="no-wrap">F-NO-WRAP</div>
+                <div class="no-wrap">F-NO-WRAP</div>
+            </div>
+
+
+            <br>
+            <br>
+
+              <div id="wrap-reverse"> 
+                <div class="wrap-reverse">FLEX-WRAP-REVERSE</div>
+                <div class="wrap-reverse">FLEX-WRAP-REVERSE</div>
+                <div class="wrap-reverse">FLEX-WRAP-REVERSE</div>
+                <div class="wrap-reverse">FLEX-WRAP-REVERSE</div>
+                <div class="wrap-reverse">FLEX-WRAP-REVERSE</div>
+                <div class="wrap-reverse">FLEX-WRAP-REVERSE</div>
+                <div class="wrap-reverse">FLEX-WRAP-REVERSE</div>
+                <div class="wrap-reverse">FLEX-WRAP-REVERSE</div>
+                <div class="wrap-reverse">FLEX-WRAP-REVERSE</div>
+             
+            </div>
+
+        </body>
+
+ 
+</html> 
